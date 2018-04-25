@@ -78,19 +78,12 @@ We provide some examples to process the live input of a monocular, stereo or RGB
 
 # 3. Building ORB-SLAM2 library and examples
 
-Clone the repository:
+Clone the repository into a catkin workspace:
 ```
-git clone https://github.com/raulmur/ORB_SLAM2.git ORB_SLAM2
+git clone https://github.com/ucsdarclab/ORB_SLAM2.git ORB_SLAM2
 ```
+Then catkin build the workspace. The catkin package is called ORB_SLAM2. Learn more about catkin packages at http://wiki.ros.org/catkin/Tutorials
 
-We provide a script `build.sh` to build the *Thirdparty* libraries and *ORB-SLAM2*. Please make sure you have installed all required dependencies (see section 2). Execute:
-```
-cd ORB_SLAM2
-chmod +x build.sh
-./build.sh
-```
-
-This will create **libORB_SLAM2.so**  at *lib* folder and the executables **mono_tum**, **mono_kitti**, **rgbd_tum**, **stereo_kitti**, **mono_euroc** and **stereo_euroc** in *Examples* folder.
 
 # 4. Monocular Examples
 
