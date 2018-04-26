@@ -94,10 +94,11 @@ install(TARGETS ${PROJECT_NAME}
       RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 #Install the header files
-install(DIRECTORY include/
+install(DIRECTORY include/${PROJECT_NAME}
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-        PATTERN ".svn" EXCLUDE
+         FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
         )
+
 
 # Build examples
 add_executable(Mono
